@@ -1,28 +1,21 @@
-package com.tutorialspoint.eclipselink.service;
+package com.tutorialspoint.eclipselink.entitymanagers.service;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import com.tutorialspoint.eclipselink.entity.Employee;
 
-public class CreateEmployee {
+import com.tutorialspoint.eclipselink.entitymanagers.entity.Employee;
 
+public class DeleteEmployee {
    public static void main( String[ ] args ) {
    
       EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "JPA-Tutspoint" );
-      
       EntityManager entitymanager = emfactory.createEntityManager( );
       entitymanager.getTransaction( ).begin( );
-
-      Employee employee = new Employee( ); 
-      employee.setEid( 1201 );
-      employee.setEname( "Gopal" );
-      employee.setSalary( 40000 );
-      employee.setDeg( "Technical Manager" );
       
-      entitymanager.persist( employee );
+      Employee employee = entitymanager.find( Employee.class, 1201 );
+      entitymanager.remove( employee );
       entitymanager.getTransaction( ).commit( );
-
       entitymanager.close( );
       emfactory.close( );
    }

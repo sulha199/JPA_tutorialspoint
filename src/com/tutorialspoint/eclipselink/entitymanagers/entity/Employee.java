@@ -1,4 +1,4 @@
-package com.tutorialspoint.eclipselink.entity;
+package com.tutorialspoint.eclipselink.entitymanagers.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

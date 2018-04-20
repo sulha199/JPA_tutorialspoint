@@ -1,4 +1,4 @@
-package com.tutorialspoint.eclipselink.service;
+package com.tutorialspoint.eclipselink.entitymanagers.service;
 
 import java.util.List;
 import javax.persistence.EntityManager;

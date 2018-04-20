@@ -1,11 +1,12 @@
-package com.tutorialspoint.eclipselink.service;
+package com.tutorialspoint.eclipselink.entitymanagers.service;
 
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
-import com.tutorialspoint.eclipselink.entity.Employee;
+
+import com.tutorialspoint.eclipselink.entitymanagers.entity.Employee;
 
 public class BetweenAndLikeFunctions {
    public static void main( String[ ] args ) {
