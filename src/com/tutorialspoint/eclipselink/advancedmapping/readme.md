@@ -2,6 +2,8 @@
 
 JPA is a library which is released with java specification. Therefore, it supports all object oriented concepts for entity persistence. Till now we are done with the basics of object relational mapping. This chapter takes you through the advanced mappings between objects and relational entities.
 
+These packages in this folder will give you example of table-creation using the following Inheritance-Strategies
+
 ## Inheritance Strategies
 Inheritance is the core concept of object oriented language, therefore we can use inheritance relationships or strategies between entities. JPA support three types of inheritance strategies such as :
 * SINGLE_TABLE, 
