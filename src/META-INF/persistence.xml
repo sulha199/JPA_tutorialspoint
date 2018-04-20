@@ -2,7 +2,16 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	
 	<persistence-unit name="JPA-Tutspoint" transaction-type="RESOURCE_LOCAL">
-		<class>com.tutorialspoint.eclipselink.entity.Employee</class>
+		<class>com.tutorialspoint.eclipselink.entitymanagers.entity.Employee</class>
+		<class>com.tutorialspoint.eclipselink.advancedmapping.singletablestrategy.entity.Staff</class>
+		<class>com.tutorialspoint.eclipselink.advancedmapping.singletablestrategy.entity.NonTeachingStaff</class>
+		<class>com.tutorialspoint.eclipselink.advancedmapping.singletablestrategy.entity.TeachingStaff</class>
+		<class>com.tutorialspoint.eclipselink.advancedmapping.joinedtablestrategy.entity.JStaff</class>
+		<class>com.tutorialspoint.eclipselink.advancedmapping.joinedtablestrategy.entity.JTeachingStaff</class>
+		<class>com.tutorialspoint.eclipselink.advancedmapping.joinedtablestrategy.entity.JNonTeachingStaff</class>
+		<class>com.tutorialspoint.eclipselink.advancedmapping.tableperclassstrategy.entity.TStaff</class>
+		<class>com.tutorialspoint.eclipselink.advancedmapping.tableperclassstrategy.entity.TTeachingStaff</class>
+		<class>com.tutorialspoint.eclipselink.advancedmapping.tableperclassstrategy.entity.TNonTeachingStaff</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpadb"/>
