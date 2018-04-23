@@ -12,8 +12,10 @@
 		<class>com.tutorialspoint.eclipselink.advancedmapping.tableperclassstrategy.entity.TStaff</class>
 		<class>com.tutorialspoint.eclipselink.advancedmapping.tableperclassstrategy.entity.TTeachingStaff</class>
 		<class>com.tutorialspoint.eclipselink.advancedmapping.tableperclassstrategy.entity.TNonTeachingStaff</class>
-		<class>com.tutorialspoint.eclipselink.entityrelationship.entity.EDepartment</class>
-		<class>com.tutorialspoint.eclipselink.entityrelationship.entity.EEmployee</class>
+		<class>com.tutorialspoint.eclipselink.entityrelationship.manytoone.entity.EDepartment</class>
+		<class>com.tutorialspoint.eclipselink.entityrelationship.manytoone.entity.EEmployee</class>
+		<class>com.tutorialspoint.eclipselink.entityrelationship.onetomany.entity.ODepartment</class>
+		<class>com.tutorialspoint.eclipselink.entityrelationship.onetomany.entity.OEmployee</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpadb"/>
