@@ -1,4 +1,4 @@
-package com.tutorialspoint.eclipselink.entityrelationship.entity;
+package com.tutorialspoint.eclipselink.entityrelationship.manytoone.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
